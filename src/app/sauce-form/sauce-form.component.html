@@ -1,4 +1,5 @@
 <mat-spinner *ngIf="loading"></mat-spinner>
+<p class="text-danger" *ngIf="errorMsg">{{ errorMsg }}</p>
 <form [formGroup]="sauceForm" *ngIf="!loading">
   <div class="form-group">
     <label for="name">Name</label>
@@ -29,5 +30,5 @@
     </div>
   </div>
   <button mat-raised-button color="primary" (click)="onSubmit()" [disabled]="sauceForm.invalid">SUBMIT</button>
-  <p class="text-danger" *ngIf="errorMsg">{{ errorMsg }}</p>
+  
 </form>

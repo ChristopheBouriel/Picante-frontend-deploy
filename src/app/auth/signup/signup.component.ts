@@ -46,7 +46,7 @@ export class SignupComponent implements OnInit {
       }
     ).catch((error) => {
         this.loading = false;        
-        this.errorMsg = error;
+        this.errorMsg = error.message;
     });
   }
 

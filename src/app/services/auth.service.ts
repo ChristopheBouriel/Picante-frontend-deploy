@@ -21,14 +21,11 @@ export class AuthService {
         (response: { message: string }) => {
           resolve(response);
         },
-        (error) => {
-          console.log(error)
-          if(error.error.error)
-         {
-           reject(error.error.error.errors.email)
-         } else {
-          
-          reject(error.error);}
+        (error) => {          
+          if(error.error.message === "Invalid Password") {          
+            reject(error.error)
+         } else {          
+              reject(error.error.error.errors.email);}
         }
       );
     });
