@@ -3,12 +3,17 @@
     <ul>
       <li>
         <a routerLink="sauces" routerLinkActive="active" *ngIf="isAuth">
-          Toute les sauces
+          All sauces
         </a>
       </li>
       <li>
         <a routerLink="new-sauce" routerLinkActive="active" *ngIf="isAuth">
-          Ajouter une sauce
+          Add sauce
+        </a>
+      </li>
+      <li>
+        <a routerLink="signup" routerLinkActive="active" *ngIf="!isAuth">
+          Sign Up
         </a>
       </li>
     </ul>
@@ -19,30 +24,29 @@
     </div>
     <div class="logo-text">
       <h1>
-        Piquante
+        Picante
       </h1>
       <h5>
-        La meilleure application de notation de sauces
+        The best hot sauce rating app
       </h5>
+    </div>
+    <div class="logo-image">
+      <img src="../../assets/images/flame.png">
     </div>
   </div>
   <div class="right-nav">
     <ul>
       <li>
-        <a routerLink="signup" routerLinkActive="active" *ngIf="!isAuth">
-          Inscription
-        </a>
-      </li>
-      <li>
         <a routerLink="login" routerLinkActive="active" *ngIf="!isAuth">
-          Connexion
+          Sign In
         </a>
       </li>
       <li>
         <a (click)="onLogout()" *ngIf="isAuth">
-          Déconnexion
+          LogOut
         </a>
       </li>
     </ul>
   </div>
 </nav>
+<p *ngIf="showMessage === true"> {{headMessage}}</p>

@@ -1,4 +1,15 @@
 <app-header></app-header>
+<br>
+<div id="warning" *ngIf="!isAuth">
+  <p>Cette interface utilisateur provient de Openclassrooms et a été fournie dans le cadre d'un sujet du parcours "Développeur Web Junior".
+    Vous pouvez la trouver sur Github en suivant ce lien : <a href="https://github.com/OpenClassrooms-Student-Center/dwj-projet6">Repository du front-end</a>.
+  </p>
+  <p>Le but étant de démontrer le bon fonctionnement de mon API sécurisée une fois déployée, ni l'apparence générale ni les foctionnalités 
+    du front-end n'ont été revues et le responsive n'était pas étudié pour une utilisation sur smartphone.<br/>
+    Ont été modifiées les URL, ce qui concerne l'affichage des messages d'erreur pour les champs des formulaires, l'apparition momentané des message de réussite
+    dans le header, ainsi que ce qui était nécessaire à l'affichage de ces lignes et les placeholders pour la création d'une nouvelle sauce. 
+  </p>
+</div>
 <div class="container">
   <router-outlet></router-outlet>
 </div>

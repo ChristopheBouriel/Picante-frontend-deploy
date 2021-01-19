@@ -95,6 +95,7 @@ export class SingleSauceComponent implements OnInit {
       (response: { message: string }) => {
         console.log(response.message);
         this.loading = false;
+        this.sauces.headMessage$.next('Sauce successfully deleted');
         this.router.navigate(['/sauces']);
       }
     ).catch(

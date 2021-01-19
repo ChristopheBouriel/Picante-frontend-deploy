@@ -102,6 +102,7 @@ export class SauceFormComponent implements OnInit {
         (response: { message: string }) => {
           console.log(response.message);
           this.loading = false;
+          this.sauces.headMessage$.next('Sauce successfully created');
           this.router.navigate(['/sauces']);
         }
       ).catch(
@@ -116,6 +117,7 @@ export class SauceFormComponent implements OnInit {
         (response: { message: string }) => {
           console.log(response);
           this.loading = false;
+          this.sauces.headMessage$.next('Sauce successfully modified');
           this.router.navigate(['/sauces']);
         }
       ).catch(

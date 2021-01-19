@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Subject, BehaviorSubject } from 'rxjs';
 import { Sauce } from '../models/Sauce.model';
 import { HttpClient } from '@angular/common/http';
 import { AuthService } from './auth.service';
@@ -83,8 +83,15 @@ export class SaucesService {
     }
   ];
 
+  headMessage$ = new BehaviorSubject<string>('');
+
   constructor(private http: HttpClient,
               private auth: AuthService) {}
+
+  clearMessage() {
+    setTimeout(
+      () => {this.headMessage$.next('');}, 8000);
+  }
 
   getSauces() {
     this.http.get('https://so-pekocko-backend.herokuapp.com/api/sauces').subscribe(
@@ -161,7 +168,7 @@ export class SaucesService {
           resolve(response);
         },
         (error) => {
-          reject(error);
+          reject(error.error);
         }
       );
     });
@@ -175,7 +182,7 @@ export class SaucesService {
             resolve(response);
           },
           (error) => {
-            reject(error);
+            reject(error.error);
           }
         );
       } else {
@@ -187,7 +194,7 @@ export class SaucesService {
             resolve(response);
           },
           (error) => {
-            reject(error);
+            reject(error.error);
           }
         );
       }

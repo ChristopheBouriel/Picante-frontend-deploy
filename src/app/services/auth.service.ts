@@ -22,7 +22,13 @@ export class AuthService {
           resolve(response);
         },
         (error) => {
-          reject(error);
+          console.log(error)
+          if(error.error.error)
+         {
+           reject(error.error.error.errors.email)
+         } else {
+          
+          reject(error.error);}
         }
       );
     });
@@ -46,7 +52,12 @@ export class AuthService {
           resolve(response);
         },
         (error) => {
-          reject(error);
+          console.log(error)
+          if(error.error.error) {
+          let err = error.error
+          reject(err);  
+          } else {reject(error)}
+          
         }
       );
     });
