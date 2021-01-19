@@ -49,7 +49,7 @@ export class AuthService {
           resolve(response);
         },
         (error) => {
-          console.log(error)
+          
           if(error.error.error) {
           let err = error.error
           reject(err);  

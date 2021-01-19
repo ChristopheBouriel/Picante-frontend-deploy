@@ -100,7 +100,7 @@ export class SaucesService {
       },
       (error) => {
         this.sauces$.next([]);
-        console.error(error);
+        
       }
     );
   }
