@@ -4,7 +4,7 @@ nav {
   position: relative;
   top: 0;
   left: 0;
-  border-bottom: thin solid black;
+  border-bottom: 10px solid rgb(158, 158, 158);
   padding-bottom: 40px;
 }
 
@@ -60,10 +60,10 @@ a {
   background-color: white;
   border: solid thin black;
   border-radius: 20px;
-  padding: 5px 35px 10px 35px;   
+  padding: 5px 35px 5px 35px;   
   cursor: pointer;
   &:hover {
-    padding: 5px 40px 10px 40px;    
+    padding: 5px 40px 5px 40px;    
   }  
 }
 
@@ -72,6 +72,11 @@ a {
   color: white;
   background-color: black;  
   border: solid thin black;
+}
+
+.logout a {
+  background-color: rgb(158, 158, 158);
+  padding: 5px 25px 5px 25px;
 }
 
 p {

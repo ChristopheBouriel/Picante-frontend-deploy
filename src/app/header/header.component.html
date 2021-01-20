@@ -1,6 +1,6 @@
 <nav class="container">
 <div class="row no-gutters">
-  <div class="left-nav col-12 col-lg-3 order-2 order-lg-1">
+  <div class="left-nav col-12 col-md-4 order-2 order-md-1">
     <ul class="row no-gutters justify-content-around">
       <div *ngIf="isAuth" class="row no-gutters justify-content-around">
       <li class="col-12 my-3">
@@ -21,7 +21,7 @@
       </li>
     </ul>
   </div>
-  <div class="logo col-12 col-lg-6 order-1 order-lg-2">
+  <div class="logo col-12 col-md-4 order-1 order-md-2">
     <div class="logo-image">
       <img src="../../assets/images/flame.png">
     </div>
@@ -37,16 +37,16 @@
       <img src="../../assets/images/flame.png">
     </div>
   </div>
-  <div class="right-nav col-12 col-lg-3 order-3">
+  <div class="right-nav col-12 col-md-4 order-3">
     <ul class="row no-gutters justify-content-around">
       <li *ngIf="!isAuth" class="col-12 mt-3">
         <a routerLink="login" routerLinkActive="active">
           Sign In
         </a>
       </li>
-      <li *ngIf="isAuth" class="col-12 mb-5">
+      <li *ngIf="isAuth" class="col-12 mb-1 mt-4 mt-md-0 mb-md-5 logout">
         <a (click)="onLogout()">
-          LogOut
+          Logout
         </a>
       </li>
     </ul>
