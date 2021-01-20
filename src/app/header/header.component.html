@@ -1,24 +1,27 @@
-<nav>
-  <div class="left-nav">
-    <ul>
-      <li>
-        <a routerLink="sauces" routerLinkActive="active" *ngIf="isAuth">
+<nav class="container">
+<div class="row no-gutters">
+  <div class="left-nav col-12 col-lg-3 order-2 order-lg-1">
+    <ul class="row no-gutters justify-content-around">
+      <div *ngIf="isAuth" class="row no-gutters justify-content-around">
+      <li class="col-12 my-3">
+        <a routerLink="sauces" routerLinkActive="active">
           All sauces
         </a>
       </li>
-      <li>
-        <a routerLink="new-sauce" routerLinkActive="active" *ngIf="isAuth">
+      <li class="col-12 my-3">
+        <a routerLink="new-sauce" routerLinkActive="active">
           Add sauce
         </a>
       </li>
-      <li>
-        <a routerLink="signup" routerLinkActive="active" *ngIf="!isAuth">
+      </div>
+      <li *ngIf="!isAuth" class="col-12 mt-3">
+        <a routerLink="signup" routerLinkActive="active">
           Sign Up
         </a>
       </li>
     </ul>
   </div>
-  <div class="logo">
+  <div class="logo col-12 col-lg-6 order-1 order-lg-2">
     <div class="logo-image">
       <img src="../../assets/images/flame.png">
     </div>
@@ -34,19 +37,21 @@
       <img src="../../assets/images/flame.png">
     </div>
   </div>
-  <div class="right-nav">
-    <ul>
-      <li>
-        <a routerLink="login" routerLinkActive="active" *ngIf="!isAuth">
+  <div class="right-nav col-12 col-lg-3 order-3">
+    <ul class="row no-gutters justify-content-around">
+      <li *ngIf="!isAuth" class="col-12 mt-3">
+        <a routerLink="login" routerLinkActive="active">
           Sign In
         </a>
       </li>
-      <li>
-        <a (click)="onLogout()" *ngIf="isAuth">
+      <li *ngIf="isAuth" class="col-12 mb-5">
+        <a (click)="onLogout()">
           LogOut
         </a>
       </li>
     </ul>
   </div>
+</div>
+
 </nav>
 <p *ngIf="showMessage === true"> {{headMessage}}</p>

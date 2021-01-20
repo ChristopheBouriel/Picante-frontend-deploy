@@ -1,14 +1,27 @@
 .sauce-container {
   display: flex;
-  img {
-    max-width: 60%;
-    flex: 1;
-  }
+  
 }
+
+.frame {
+  border: solid grey 1px;
+  border-radius: 5px;
+  padding: 40px 20px;
+  background-color: white ;
+}
+
+img {
+    max-width: 100%;
+    padding: 40px 20px;
+    /*flex: 1;*/
+  }
 
 .sauce-info {
   padding: 40px 20px;
-  flex: 1;
+  border: solid grey 1px;
+  border-radius: 5px;
+  background-color: rgb(242, 234, 200);
+  /*flex: 1;*/
 }
 
 .manufacturer {

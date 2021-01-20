@@ -5,11 +5,11 @@
     <label for="email">Email</label>
     <input type="email" class="form-control" id="email" formControlName="email">
   </div>
-  <p>Password must contain one capital, one lowercase, one number, one special caracter and be at least 8 caracters long. </p>
+  <p>Password must contain at least one capital, one lowercase, one number, one special caracter and be at least 8 caracters long. </p>
   <div class="form-group">
     <label for="password">Password</label>
     <input type="password" class="form-control" id="password" formControlName="password">
   </div>
-  <button mat-raised-button color="primary" [disabled]="signupForm.invalid" (click)="onSignup()">SIGN UP</button>
+  <button mat-raised-button color="black" [disabled]="signupForm.invalid" (click)="onSignup()">SIGN UP</button>
   
 </form>

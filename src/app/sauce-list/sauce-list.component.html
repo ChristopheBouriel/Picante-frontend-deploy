@@ -4,7 +4,7 @@
 </p>
 <p class="list-title" *ngIf="!loading && sauces.length > 0">THE SAUCES</p>
 <div class="sauce-list" *ngIf="!loading && sauces.length  > 0">
-  <div class="sauce-list-item" *ngFor="let sauce of sauces" (click)="onClickSauce(sauce._id)">
+  <div class="sauce-list-item my-4" *ngFor="let sauce of sauces" (click)="onClickSauce(sauce._id)">
     <img [src]="sauce.imageUrl">
     <h4>{{ sauce.name | uppercase }}</h4>
     <p>Heat: {{ sauce.heat }}/10</p>

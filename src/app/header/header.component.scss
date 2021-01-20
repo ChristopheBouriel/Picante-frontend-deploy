@@ -1,20 +1,16 @@
-nav {
-  box-sizing: border-box;
+nav {  
   width: 100%;
-  max-width: 1400px;
-  margin: auto;
+  max-width: 1400px;  
   position: relative;
   top: 0;
   left: 0;
-  display: flex;
-  padding: 20px;
-  justify-content: space-between;
   border-bottom: thin solid black;
+  padding-bottom: 40px;
 }
 
 h1 {
   font-weight: 700;
-  font-size: 2.4em;
+  font-size: 3.4em;
   margin: 0;
 }
 
@@ -27,6 +23,7 @@ h5 {
 .logo {
   display: flex;
   align-items: center;
+  justify-content: center;  
 }
 
 .logo-text {
@@ -37,50 +34,52 @@ h5 {
   img {
     height: 4.5em;
   }
-  margin-right: 1em;
+  margin: 0.8em;
 }
 
 .left-nav, .right-nav {
   align-self: center;
-  width: 30%;
-}
-
-.right-nav {
-  ul {
-    justify-content: flex-end;
-  }
 }
 
 ul {
   list-style: none;
-  padding: 0;
+  padding: 10px 0px;
   margin: 0;
-  display: flex;
+  text-align: center;
 }
 
 li {
-  margin: 0 15px;
+  font-size: 0.9rem;
 }
 
 a {
+  color:black;
+  font-weight: 600;
+  text-decoration: none;  
   color: black;
-  font-weight: 400;
-  text-decoration: none;
+  background-color: white;
+  border: solid thin black;
+  border-radius: 20px;
+  padding: 5px 35px 10px 35px;   
   cursor: pointer;
   &:hover {
-    text-decoration: underline;
-  }
+    padding: 5px 40px 10px 40px;    
+  }  
 }
 
 .active {
-  font-weight: 700;
-  text-decoration: underline;
+  font-weight: 900;
+  color: white;
+  background-color: black;  
+  border: solid thin black;
 }
 
 p {
   padding-top: 20px;
-  font-size: x-large;
+  font-size: large;
   font-weight: bold;
   text-align: center;
   color: rgb(143, 30, 160);
 }
+
+
