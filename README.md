@@ -25,6 +25,8 @@ You'll need to install node-sass separatly.
 3. Type the command bellow :  
 `npm install node-sass`
 
-4. Then, type the command bellow :
-`ng serve`  
+4. Then, type the command bellow :  
+`ng serve` 
+
+Now, you can open your browser on http://localhost:4200/   
 The application will reload automatically if you modify a source file.
