@@ -1,9 +1,26 @@
-## Piquante
+# About this repo :
 
-Le projet a été généré avec [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.
+This front-end had initially been provided by Openclassrooms as part of a project for their Junior Web Develepper training. You'll find the Github repository by following this link :
+https://github.com/OpenClassrooms-Student-Center/dwj-projet6  
+It has been slightly improved to be responsive, as for the header, and to display correctly the messages from the back-end.  
 
-Pour faire fonctionner le projet, vous devez installer node-sass à part.
+You can get more details about this project in my portfolio :  
+https://portfolio-christophe-bouriel.netlify.app  
 
-## Development server
+The whole app has been deployed and you can test it directly by connecting at this address :  
+https://picante.netlify.app  
+The back-end is hosted on Heroku and you can find the corresponding repository by clicking [here](https://github.com/ChristopheBouriel/Picante-backend-deploy). The data base is on MongoDB Atlas, while the images are stored on Cloudinary.  
 
-Démarrer `ng serve` pour avoir accès au serveur de développement. Rendez-vous sur `http://localhost:4200/`. L'application va se recharger automatiquement si vous modifiez un fichier source.
+## To start the developpement server :
+
+This was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.  
+You'll need to install node-sass separatly.  
+
+1. Clone this repo :  
+`git clone https://github.com/ChristopheBouriel/Picante-frontend-deploy.git`
+
+2. Enter inside the root folder of the project :  
+`cd Picante-frontend-deploy`
+
+3. Type the command bellow :  
+`npm install node-sass`
