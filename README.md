@@ -24,3 +24,7 @@ You'll need to install node-sass separatly.
 
 3. Type the command bellow :  
 `npm install node-sass`
+
+4. Then, type the command bellow :
+`ng serve`  
+The application will reload automatically if you modify a source file.
