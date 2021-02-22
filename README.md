@@ -1,6 +1,6 @@
 # About this repo :
 
-This front-end had initially been provided by Openclassrooms as part of a project for their Junior Web Develepper training. You'll find the Github repository by following this link :
+This front-end had initially been provided by Openclassrooms as part of a project for their Junior Web Develepper training. You'll find the Github repository by following this link :  
 https://github.com/OpenClassrooms-Student-Center/dwj-projet6  
 It has been slightly improved to be responsive, as for the header, and to display correctly the messages from the back-end.  
 
